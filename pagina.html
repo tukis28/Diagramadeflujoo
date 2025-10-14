@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagrama de Flujo</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #c8e6c9; /* Verde pastel */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      background-color: #a5d6a7;
+      color: #2e7d32;
+      width: 100%;
+      padding: 20px 0;
+      font-size: 2rem;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .contenedor {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .tarjeta {
+      background-color: #e8f5e9;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .tarjeta:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+
+    .icono {
+      font-size: 70px;
+      margin-bottom: 15px;
+      color: #388e3c;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #1b5e20;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #2e7d32;
+      font-size: 0.9rem;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>📊 Diagrama de Flujo 📊</header>
+
+  <div class="contenedor">
+
+    <a href="Lasana.png" class="tarjeta" target="_blank">
+      <div class="icono"><i class="fas fa-layer-group"></i></div>
+      <h2>Lasaña de carne y espinacas</h2>
+    </a>
+
+    <a href="Filete.png" class="tarjeta" target="_blank">
+      <div class="icono"><i class="fas fa-drumstick-bite"></i></div>
+      <h2>Filete de res en salsa de vino tinto con puré de papa</h2>
+    </a>
+
+    <a href="Risotto.png" class="tarjeta" target="_blank">
+      <div class="icono"><i class="fas fa-shrimp"></i></div>
+      <h2>Risotto de camarones al ajo</h2>
+    </a>
+
+    <a href="Cheesecake.png" class="tarjeta" target="_blank">
+      <div class="icono"><i class="fas fa-cheese"></i></div>
+      <h2>Cheesecake de frutos rojos</h2>
+    </a>
+
+  </div>
+
+</body>
+</html>
